@@ -8,4 +8,6 @@ import (
 func main() {
 	Intro.Gophers()
 	Variables.BasicVars()
+	Variables.ShortHand()
+	Variables.InferType()
 }
