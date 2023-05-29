@@ -6,6 +6,7 @@ import (
 	"github.com/lostinopensrc/boot.dev/Variables"
 	"github.com/lostinopensrc/boot.dev/Conditionals"
 	"github.com/lostinopensrc/boot.dev/Functions"
+	"github.com/lostinopensrc/boot.dev/Structs"
 )
 
 func main() {
@@ -20,4 +21,10 @@ func main() {
 	fmt.Println(result)
 	_,err := Functions.Divide(4,0) // We cannot divide a divident by 0 , print the err 
 	fmt.Println(err)
+	input := Structs.Rect{
+		Width: 10,
+		Height: 10,
+	}
+	result=Structs.Area(input)
+	fmt.Println("Area of Rectangle is: ", result)
 }
